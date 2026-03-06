@@ -1,0 +1,15 @@
+{
+  "name": "application-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Documentation generator for application",
+  "scripts": {
+    "generate": "typedoc",
+    "serve": "npm run generate && npx http-server dist -p 8080 -o",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typedoc": "^0.27.6",
+    "http-server": "^14.1.1"
+  }
+}
